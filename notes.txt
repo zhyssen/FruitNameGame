@@ -1,0 +1,7 @@
+
+read file into an array/list
+
+random number generator 0 - 9
+switch? if/else?
+array# == picture#
+correct++
