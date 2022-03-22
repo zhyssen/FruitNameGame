@@ -2,6 +2,30 @@
 read file into an array/list
 
 random number generator 0 - 9
+foreach loop
 switch? if/else?
 array# == picture#
 correct++
+
+random # into an array
+// Create an array to hold the numbers
+            const int SIZE = 5;
+            int[] lotteryNumbers = new int[SIZE];
+
+            // Create a random object
+            Random rand = new Random();
+
+            // Fill the array with random numbers, in the range of 
+            // 0 through 99.
+            for (int index = 0; index < lotteryNumbers.Length; index++)
+            {
+                lotteryNumbers[index] = rand.Next(100);
+            }
+
+            // Display the array elements in the Label controls
+            firstLabel.Text = lotteryNumbers[0].ToString();
+            secondLabel.Text = lotteryNumbers[1].ToString();
+            thirdLabel.Text = lotteryNumbers[2].ToString();
+            fourthLabel.Text = lotteryNumbers[3].ToString();
+            fifthLabel.Text = lotteryNumbers[4].ToString();
+        }

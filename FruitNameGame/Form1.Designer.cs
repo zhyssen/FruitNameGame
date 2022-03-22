@@ -47,6 +47,7 @@ namespace FruitNameGame
             this.exitButton = new System.Windows.Forms.Button();
             this.StartButton = new System.Windows.Forms.Button();
             this.testListBox = new System.Windows.Forms.ListBox();
+            this.test2ListBox = new System.Windows.Forms.ListBox();
             this.fruitGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.watermelonPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.strawberryPictureBox)).BeginInit();
@@ -251,6 +252,7 @@ namespace FruitNameGame
             this.endButton.TabIndex = 14;
             this.endButton.Text = "&End";
             this.endButton.UseVisualStyleBackColor = true;
+            this.endButton.Click += new System.EventHandler(this.endButton_Click);
             // 
             // exitButton
             // 
@@ -261,6 +263,7 @@ namespace FruitNameGame
             this.exitButton.TabIndex = 15;
             this.exitButton.Text = "E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // StartButton
             // 
@@ -281,11 +284,20 @@ namespace FruitNameGame
             this.testListBox.Size = new System.Drawing.Size(121, 147);
             this.testListBox.TabIndex = 17;
             // 
+            // test2ListBox
+            // 
+            this.test2ListBox.FormattingEnabled = true;
+            this.test2ListBox.Location = new System.Drawing.Point(459, 300);
+            this.test2ListBox.Name = "test2ListBox";
+            this.test2ListBox.Size = new System.Drawing.Size(121, 147);
+            this.test2ListBox.TabIndex = 18;
+            // 
             // FruitNameGameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(603, 516);
+            this.Controls.Add(this.test2ListBox);
             this.Controls.Add(this.testListBox);
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.exitButton);
@@ -332,6 +344,7 @@ namespace FruitNameGame
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button StartButton;
         private System.Windows.Forms.ListBox testListBox;
+        private System.Windows.Forms.ListBox test2ListBox;
     }
 }
 
